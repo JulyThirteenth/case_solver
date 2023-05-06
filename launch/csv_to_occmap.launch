@@ -1,0 +1,8 @@
+<launch>
+
+    <rosparam file="$(find case_solver)/config/param.yaml" command="load" />
+    <node name = "rviz" pkg = "rviz" type = "rviz" args= "-d $(find case_solver)/config/rviz/csv_to_occmap.rviz" />
+    <node name = "world2map" pkg="tf" type = "static_transform_publisher" args="0 0 0 0 0 0 /world /map 10" />
+    <node name = "csv_to_occmap_node" pkg = "case_solver" type = "csv_to_occmap_node" output="screen" />
+    
+</launch>

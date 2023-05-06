@@ -1,0 +1,6 @@
+case_id: 7
+padding: 20.
+resolution: 0.05
+case_path: "/home/wsa/tpcap_ws/src/case_solver/FinalStageCases"
+solution_path: "/home/wsa/tpcap_ws/src/case_solver/solutions/path"
+solution_traj: "/home/wsa/tpcap_ws/src/case_solver/solutions/traj"
